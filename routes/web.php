@@ -21,6 +21,7 @@ use App\Http\Controllers\NoteController;
 
 Route::put('modificar/{id}',[NoteController::class, 'modificar']);
 Route::get('actualizar/{id}',[NoteController::class, 'actualizar']);
+Route::get('/',[NoteController::class, 'mostrar']);
 Route::get('home',[NoteController::class, 'mostrar']);
 Route::get('read',[NoteController::class, 'read']);
 Route::post('borrar',[NoteController::class, 'borrar']);
